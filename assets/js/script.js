@@ -20,7 +20,7 @@ var arraySocios = [];
   funcion para leer del JSON
 */
 function cargarSociosJSON () {
-  let path = 'app/Model/datosSocios.json'
+  let path = './app/Model/datosSocios.json'
 
   let request = new Request(path, {
     headers: new Headers({
