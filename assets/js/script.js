@@ -149,6 +149,13 @@ class Socio {
 }
 
 console.log('Acaba el programa')
+<<<<<<< HEAD
+=======
+ 
+ 
+
+
+>>>>>>> dd909a4af4d006bbfa960e8d213229466b45e72c
 
 
 
