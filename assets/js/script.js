@@ -45,13 +45,6 @@ TODO:  metodo para añadir socios al array
 function aniadirSociosInicialesArray (data) {
   //  TODO: cargar el fichero JSON, parsearlo a objetos tipo "socio" y añadirlos al array
 
-class Socio {
-  constructor(id,nombre,apellido){
-    this.id = id;
-    this.nombre = nombre,
-    this.apellido = apellido
-  }
-}
 
 for(const dato of data){
   const nuevoSocio = new Socio(dato.id,dato.nombre,dato.apellido);
@@ -83,13 +76,7 @@ TODO:
       // TODO: crear objeto socio
       var id = crearID()
 
-      class Socio {
-        constructor(id,nombre,apellido){
-          this.id = id;
-          this.nombre = nombre,
-          this.apellido = apellido
-        }
-      }
+
       const nuevoSocio = new Socio(id,nombre,apellido);
       
       return nuevoSocio;
@@ -153,10 +140,15 @@ function pintarListaSocios () {
 
 cargarSociosJSON()
 
+class Socio {
+  constructor(id,nombre,apellido){
+    this.id = id;
+    this.nombre = nombre,
+    this.apellido = apellido
+  }
+}
+
 console.log('Acaba el programa')
- 
-
-
 
 
 
